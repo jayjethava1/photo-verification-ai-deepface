@@ -27,7 +27,7 @@ def face_distance(img1, img2):
     result = DeepFace.verify(
         img1_path=img1,
         img2_path=img2,
-        enforce_detection=True,
+        enforce_detection=False,
         detector_backend="retinaface",
         model_name="ArcFace"
     )
